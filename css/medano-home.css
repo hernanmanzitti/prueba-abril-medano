@@ -134,7 +134,8 @@
 
 /* ── SERVICES ─────────────────────────────────────────────── */
 #services {
-  padding-block: var(--section-padding-y);
+  padding-top: var(--space-5);
+  padding-bottom: var(--section-padding-y);
   position: relative;
 }
 
@@ -770,6 +771,8 @@
   opacity: 1;
 }
 
+
+
 /* Industrias */
 .clients-industries {
   display: flex;
@@ -793,6 +796,21 @@
   color: var(--color-border-default);
   font-size: var(--text-md);
   line-height: 1;
+}
+/* ── CLIENTS / Divisor de sección ── */
+
+.clients-section-divider {
+  width: 100%;
+  height: var(--border-width-thin);
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--color-border-default) 20%,
+    var(--color-border-strong) 50%,
+    var(--color-border-default) 80%,
+    transparent 100%
+  );
+  margin-top: var(--space-16);
 }
 
 /* ── Responsive ── */
