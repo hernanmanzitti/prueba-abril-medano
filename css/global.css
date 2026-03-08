@@ -860,11 +860,16 @@ body.nav-open {
 
 /* ── RESPONSIVE — Mobile (768px) ──────────────────────────── */
 @media (max-width: 768px) {
-  :root {
-    --section-padding-y: var(--section-padding-y-sm);
+:root {
+    --section-padding-y:   var(--section-padding-y-sm);
     --container-padding-x: var(--container-padding-x-sm);
-    --card-padding: var(--card-padding-sm);
-    --grid-gap: var(--grid-gap-sm);
+    --card-padding:        var(--card-padding-sm);
+    --grid-gap:            var(--grid-gap-sm);
+
+    /* Accesibilidad móvil — legibilidad presbicia */
+    --text-xs:   0.825rem;  /* 12px → 13.2px */
+    --text-sm:   0.965rem;  /* 14px → 15.4px */
+    --text-base: 1.05rem;   /* 16px → 16.8px */
   }
 
   .section-heading {

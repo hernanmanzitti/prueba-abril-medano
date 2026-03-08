@@ -627,10 +627,6 @@
     padding: var(--space-1) var(--space-3);
   }
 
-  .hero-actions {
-    flex-direction: column;
-    align-items: stretch;
-  }
 
   .hero-actions .btn-primary,
   .hero-actions .btn-outline {
