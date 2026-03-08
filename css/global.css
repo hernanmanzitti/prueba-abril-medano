@@ -867,9 +867,19 @@ body.nav-open {
     --grid-gap:            var(--grid-gap-sm);
 
     /* Accesibilidad móvil — legibilidad presbicia */
-    --text-xs:   0.825rem;  /* 12px → 13.2px */
-    --text-sm:   0.965rem;  /* 14px → 15.4px */
-    --text-base: 1.05rem;   /* 16px → 16.8px */
+    --text-xs:   0.9rem;  /* 12px → 13.2px */
+    --text-sm:   1.05rem;  /* 14px → 15.4px */
+    --text-base: 1.1rem;   /* 16px → 16.8px */
+
+        /*
+      Accesibilidad móvil — Presbicia
+      --text-xs:   0.75rem  → 0.825rem  (+10%)
+      --text-sm:   0.875rem → 0.965rem  (+10%)
+      --text-base: 1rem     → 1.05rem   (+5%, sutil — solo como base)
+      Títulos (--text-2xl en adelante) y clamp() no se tocan.
+    */
+
+
   }
 
   .section-heading {
