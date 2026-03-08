@@ -360,6 +360,11 @@
   position: relative;
   z-index: var(--z-raised);
 }
+.pd-service-icons-duo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
 
 /* ── Proceso — hereda clases de resenas.css ─────────────────── */
 #pd-proceso {
