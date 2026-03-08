@@ -209,26 +209,46 @@
 }
 
 .service-icon {
-  width: 44px;
-  height: 44px;
-  background-color: var(--color-bg-subtle);
-  border: var(--border-width-default) solid var(--color-border-default);
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, var(--color-brand-royal) 0%, var(--color-brand-mid) 100%);
+  border: var(--border-width-default) solid var(--color-brand-mid);
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: var(--space-6);
-  color: var(--color-brand-mid);
+  color: var(--color-text-primary);
+  box-shadow:
+    0 0 12px rgba(100, 108, 170, 0.45),
+    0 0 24px rgba(100, 108, 170, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transition: var(--transition-default);
 }
 
 .service-icon svg {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   stroke: currentColor;
   fill: none;
-  stroke-width: 1.5;
+  stroke-width: 1.75;
   stroke-linecap: round;
   stroke-linejoin: round;
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.5));
+}
+
+.service-card-link:hover .service-icon,
+.service-card:hover .service-icon {
+  box-shadow:
+    0 0 18px rgba(100, 108, 170, 0.7),
+    0 0 36px rgba(100, 108, 170, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-color: var(--color-brand-light);
+}
+
+.service-card-link:hover .service-icon svg,
+.service-card:hover .service-icon svg {
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.8));
 }
 
 .service-number {
@@ -786,6 +806,10 @@
   filter: brightness(0) invert(1);
   opacity: 0.5;
   transition: opacity var(--duration-normal) var(--ease-out);
+}
+
+.client-logo-img--wide {
+  padding: var(--space-3) var(--space-4);
 }
 
 .client-logo-item:hover .client-logo-img {
